@@ -1,0 +1,142 @@
+ BELLHOP/BELLHOP3D
+
+ BELLHOP- UWA Communication Channel for DL-Driven LDPC-OFDM                      
+ frequency =  0.1000E+05 Hz
+
+ Dummy parameter NMedia =            1
+
+     C-linear approximation to SSP
+     Attenuation units: dB/wavelength
+     VACUUM
+
+ Depth =     100.00 m
+
+ Sound speed profile:
+   z (m)     alphaR (m/s)   betaR  rho (g/cm^3)  alphaI     betaI
+
+      0.00      1522.00      0.00     1.00       0.0000    0.0000
+      5.00      1521.00      0.00     1.00       0.0000    0.0000
+     10.00      1520.00      0.00     1.00       0.0000    0.0000
+     15.00      1519.00      0.00     1.00       0.0000    0.0000
+     20.00      1517.00      0.00     1.00       0.0000    0.0000
+     30.00      1514.00      0.00     1.00       0.0000    0.0000
+     40.00      1510.00      0.00     1.00       0.0000    0.0000
+     50.00      1506.00      0.00     1.00       0.0000    0.0000
+     60.00      1504.00      0.00     1.00       0.0000    0.0000
+     70.00      1503.00      0.00     1.00       0.0000    0.0000
+     80.00      1502.00      0.00     1.00       0.0000    0.0000
+     90.00      1501.00      0.00     1.00       0.0000    0.0000
+    100.00      1502.00      0.00     1.00       0.0000    0.0000
+
+                                 ( RMS roughness =   0.00     )
+     ACOUSTO-ELASTIC half-space
+    100.00      1650.00      0.50     1.85       0.9000    0.0000
+
+ __________________________________________________________________________
+
+ Number of Source   depths, Sz =            1
+ Source   depths, Sz (m)
+   30.0000    
+
+
+ __________________________________________________________________________
+
+ Number of Receiver depths, Rz =            1
+ Receiver depths, Rz (m)
+   40.0000    
+
+
+ __________________________________________________________________________
+
+ Number of Receiver ranges, Rr =            1
+ Receiver ranges, Rr (km)
+   10.0000    
+
+
+ Arrivals calculation, ASCII  file output
+ Geometric hat beams in Cartesian coordinates
+ Point source (cylindrical coordinates)
+ Rectilinear receiver grid: Receivers at Rr( : ) x Rz( : )
+ __________________________________________________________________________
+
+ Number of beams in elevation   =          721
+ Beam take-off angles (degrees)
+  -60.0000      -59.8333      -59.6667      -59.5000      -59.3333    
+  -59.1667      -59.0000      -58.8333      -58.6667      -58.5000    
+          ... 
+   60.0000    
+
+ __________________________________________________________________________
+
+
+ Step length,       deltas =   0.000     m
+
+ Maximum ray depth, Box%z  =   120.0     m
+ Maximum ray range, Box%r  =   10.00    km
+ No beam shift in effect
+
+
+ Step length,       deltas =   10.00     m (automatically selected)
+
+ ( Maximum # of arrivals =     20000000 )
+
+Tracing beam       1    -60.00
+
+ Geometric hat beams                     
+ halfwidth  =    16.567229379725859     
+ epsilonOpt =  (  0.0000000000000000     ,  8622826.4101722799     )
+ EpsMult    =    1.0000000000000000     
+
+Tracing beam      15    -57.67
+Tracing beam      29    -55.33
+Tracing beam      43    -53.00
+Tracing beam      57    -50.67
+Tracing beam      71    -48.33
+Tracing beam      85    -46.00
+Tracing beam      99    -43.67
+Tracing beam     113    -41.33
+Tracing beam     127    -39.00
+Tracing beam     141    -36.67
+Tracing beam     155    -34.33
+Tracing beam     169    -32.00
+Tracing beam     183    -29.67
+Tracing beam     197    -27.33
+Tracing beam     211    -25.00
+Tracing beam     225    -22.67
+Tracing beam     239    -20.33
+Tracing beam     253    -18.00
+Tracing beam     267    -15.67
+Tracing beam     281    -13.33
+Tracing beam     295    -11.00
+Tracing beam     309     -8.67
+Tracing beam     323     -6.33
+Tracing beam     337     -4.00
+Tracing beam     351     -1.67
+Tracing beam     365      0.67
+Tracing beam     379      3.00
+Tracing beam     393      5.33
+Tracing beam     407      7.67
+Tracing beam     421     10.00
+Tracing beam     435     12.33
+Tracing beam     449     14.67
+Tracing beam     463     17.00
+Tracing beam     477     19.33
+Tracing beam     491     21.67
+Tracing beam     505     24.00
+Tracing beam     519     26.33
+Tracing beam     533     28.67
+Tracing beam     547     31.00
+Tracing beam     561     33.33
+Tracing beam     575     35.67
+Tracing beam     589     38.00
+Tracing beam     603     40.33
+Tracing beam     617     42.67
+Tracing beam     631     45.00
+Tracing beam     645     47.33
+Tracing beam     659     49.67
+Tracing beam     673     52.00
+Tracing beam     687     54.33
+Tracing beam     701     56.67
+Tracing beam     715     59.00
+
+ CPU Time =       0.219    s
