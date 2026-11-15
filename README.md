@@ -65,3 +65,12 @@ Full details of every option are in `matlab/paper_revision/README_paper_revision
 ## Citation
 
 If you use this material, please cite the manuscript above (a DOI will be added after publication).
+
+## Raw results
+`results/raw_mat/` holds the MATLAB result structs (SNR_dB_range, BER_vs_SNR, ExecutionTime, Throughput) for the four scenarios A (channel 1, rate 1/3), B (channel 1, rate 1/2), C (channel 2, rate 1/2) and D (channel 2, rate 1/3), one file per code (`<scenario>_<code>.mat`); `results/raw_results.csv` collects them. `figures/plot3_from_raw.py` draws Figs. 1-3 from the CSV. ExecutionTime and Throughput are means over 100 frames per SNR point. `figures/data/figure_data_digitised.csv` is the earlier digitised data, kept only for comparison; all curves agree with the raw files to within 0.015 in BER (except the Convolutional tail of scenario D, 0.0028 digitised against 0.0017 raw).
+
+## Per-code MATLAB projects (rate 1/2, channel 1)
+`matlab/projects_rate_half/{polar,turbo,conv}/` are the complete project folders as run for the rate-1/2 configuration on channel 1 (`UWA_Communication.arr`/`.env`): `get_system_params.m` sets the code parameters (Polar N = 32768, K = N/2; Turbo K = 32400 punctured to rate 1/2; Convolutional K = 21845, generators [171 133]), `main_channel_test.m` runs the BER sweep, and `main_channel_testWITHTIMEANDTHROUPUT.m` (`main_channel_test_WATHTIMEANDTHROUPUT.m` for Turbo) records per-frame time and throughput and saves the result struct. Their saved outputs are in `results/raw_mat/` (scenario B). The rate-1/3 and channel-2 runs use the same scripts with the parameters changed in `get_system_params.m` as listed in the paper (Table 2).
+
+## LDPC project (rate 1/3, channel 1)
+`matlab/projects_rate_third/ldpc/` is the complete LDPC project as run for scenario A: `get_system_params.m` sets `params.ldpc_rate = 1/3` (DVB-S2, N = 64800, K = 21600, belief propagation), `main_channel_test.m` runs the BER sweep on channel 1. It contains no per-frame timing script; the timing/throughput outputs of scenario A are in `results/raw_mat/A_ch1_r13_LDPC.mat`, and the timing wrapper used for the other codes is `main_channel_testWITHTIMEANDTHROUPUT.m` in `matlab/projects_rate_half/`.
